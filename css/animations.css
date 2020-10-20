@@ -12,7 +12,7 @@ p {
     border-radius: 8px;
     padding: 1px;
     border: 1px solid #021a40;
-    background-color: #ff0;
+    background-color: #00ab8d;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.7);
 }
 
@@ -37,7 +37,7 @@ p {
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 50px 0px;
+    padding: 20px 0px;
     justify-content: center;
     align-items: center;
     background: rgba(0, 0, 0, .5);

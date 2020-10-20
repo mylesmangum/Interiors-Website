@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/desktop_css.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./css/shared.css">
     <title>Spruce Personalized Decore | Home</title>
 </head>
 <body>
@@ -148,40 +149,41 @@
     <!-- End Gallery -->
 
     <!-- RSVP -->
-    <section>
-        <div id="rsvp">
-            <div>
-                <h1>Reservations</h1>
-                <div>
-                    <h2><span>Your dream home is just around the corner.</span>
-                    <br>Book and appointment today!</h2>
+    <section id="rsvp">
+        <div class="container">
+            <div class="heading_padding">
+                <h1 class="heading_padding">Reservations</h1>
+                <div class="reservation">
+                    <h2>
+                            <span>Your dream home is just around the corner.</span>
+                        <br>Book and appointment today!
+                    </h2>
+                    <p class="rsvp_text">Please provide us with your basic contact information.</p>
                 </div>
-                <div>
-                    <form action="">
+                <div class="form_rsvp">
+                    <form action="" method="POST">
                         <div>
                             <label for="fname">First Name</label>
                             <br>
-                            <input type="text" id="fname" name="fname">
+                            <input type="text" id="fname" name="fname" placeholder="First Name">
                         </div>
                         <div>
-                            <label for="lname">Last Name</label>
-                            <br>
-                            <input type="text" id="lname" name="lname">
+                            <input type="text" id="lname" name="lname" placeholder="Last Name">
                         </div>
                         <div>
-                            <label for="phone">Phone Number</label>
-                            <br>
-                            <input type="text" id="phone" name="phone">
+                            <input type="text" id="phone" name="phone" placeholder="Phone Number"">
                         </div>
                         <div>
-                            <label for="address">Home Address</label>
-                            <br>
-                            <input type="text" id="address" name="address">
+                            <input type="text" id="address" name="address" placeholder="Home Address">
                         </div>
                         <div>
-                            <label for="email">Email Address</label>
-                            <br>
-                            <input type="text" id="email" name="email">
+                            <input type="text" id="email" name="email" placeholder="E-Mail">
+                        </div>
+                        <div class="form_spacer">
+                            <label class="terms">Terms and Conditions</label>
+                        </div>
+                        <div class="submit">
+                            <input type="submit" value="SUBMIT">
                         </div>
                     </form>
                 </div>
