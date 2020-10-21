@@ -136,6 +136,7 @@ section{
     background-color: #00ab8d;
     border: 5px double #00795a;
     padding: 10px;
+    margin-left: 25%;
 }
 
 /* End Home Section */
@@ -179,6 +180,19 @@ section{
 
 /* End Navbar */
 
+/* Content Container in Gallery and RSVP Section */
+
+.content_container{
+    background-color: #eee;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: -5%;
+    padding-bottom: 0%;
+    border-radius: 2%;
+}
+
+/* End Content Container */
+
 /* Gallery */
 
 #gallery{
@@ -193,7 +207,7 @@ section{
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
-    
+    justify-content: ;
 }
 
 .photo{
@@ -206,11 +220,12 @@ section{
 
 #rsvp{
     background-color: #00ab8d;
-    width: 50rem;
+    width: 100rem;
     height: auto;
     padding: 5rem;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0;
 }
 
 
