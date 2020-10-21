@@ -19,8 +19,8 @@ p {
 .photo_container{
     text-align: center;
     margin: 15px auto;
-    width: 400px;
-    height: 225px;
+    width: 300px;
+    height: 169px;
 }
 
 .photo_container img{
@@ -62,4 +62,12 @@ p {
 
 .photo:hover img{
     transform: scale(1.1);
+}
+/* Menu Animations */
+
+@keyframes hovering_menu{
+    100%{
+        background-color: #00ab8d;
+        color: #fff;
+    }
 }
