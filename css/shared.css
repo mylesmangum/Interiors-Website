@@ -30,6 +30,7 @@ h1{
     text-transform: uppercase;
     text-align: centercolor #00ab8d;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    text-align: center;
 }
 
 h2{
@@ -83,27 +84,32 @@ section{
 }
 
 .wrap{
-    height: 100%;
+    height: 10rem;
     width: 100%;
     overflow: hidden;
-    top: 0;
-    left: 0;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00795a;
 }
 
 .menu_container{
     max-height: 340px;
+    min-height: 8rem;
     margin: 0% auto;
     content: "";
     width: 100%;
     position: fixed;
     z-index: 100;
+    padding: 0;
+    background-color: #fff;
 }
 
 /* Home Section Styles */
 
 #home{
     background: url(../img/Home\ Background\ Image.jpeg);
+    filter: brightness(80%);
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
@@ -112,4 +118,109 @@ section{
     padding-top: 350px; /* Spacer before the main title logo */
     padding-bottom: 500px; /* Spacer after the main title logo */
     color: #fff;
+}
+
+
+
+.head_main{
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, .5);
+    font-variant: small-caps;
+    color: #fff;
+    letter-spacing: 5pt;
+    word-spacing: 21pt;
+    font-size: 4.5em;
+    text-align: right;
+    font-family: impact, sans-serif;
+    line-height: 2;
+    font-weight: 900;
+    background-color: #00ab8d;
+    border: 5px double #00795a;
+    padding: 10px;
+}
+
+/* End Home Section */
+
+/* Nav Bar Style */
+
+.navigation{
+    display: flex;
+    margin: 0;
+    align-items: center;
+    width: 100%;
+    height: 8rem;
+}
+
+.navigation a{
+    display: flex;
+    width: 45%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    color: #00ab8d;
+    font-weight: 500;
+    
+}
+
+.navigation a:hover{
+    animation: hovering_menu;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;   /* Makes the animation stay at 100% */
+
+}
+
+.navigation img{
+    height: 100%;
+    margin-right: 20rem;
+    margin-left: 10rem;
+    cursor: pointer;
+}
+
+/* End Navbar */
+
+/* Gallery */
+
+#gallery{
+    margin-left: 40rem;
+    margin-right: 40rem;
+}
+
+.flex_container{
+    display: flex;
+    height: auto;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    
+}
+
+.photo{
+    justify-content: center;
+}
+
+/* End Gallery */
+
+/* Contact */
+
+#rsvp{
+    background-color: #00ab8d;
+    width: 50rem;
+    height: auto;
+    padding: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* End Contact */
+
+/* ANIMATIONS */
+
+@keyframes hovering_menu{
+    100%{
+        background-color: #00ab8d;
+        color: #fff;
+    }
 }
