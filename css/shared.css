@@ -103,9 +103,13 @@ section{
 /* Home Section Styles */
 
 #home{
-    background: url();
+    background: url(../img/Home\ Background\ Image.jpeg);
     background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-bacground-size: cover;
-    
+    background-size: cover;
+    width: 100%;
+    display: block;
+    height: auto;
+    padding-top: 350px; /* Spacer before the main title logo */
+    padding-bottom: 500px; /* Spacer after the main title logo */
+    color: #fff;
 }
