@@ -26,8 +26,8 @@ p {
 .photo_container img{
     image-rendering: -webkit-optimize-contrast;
     max-width: 100%;
-    width: 400px;
-    height: 225px;
+    width: 300px;
+    height: 169px;
 }
 
 .photo_overlay{
@@ -37,7 +37,7 @@ p {
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 15% 0;
+    padding: 8% 0;
     justify-content: center;
     align-items: center;
     background: rgba(0, 0, 0, .5);
@@ -69,5 +69,12 @@ p {
     100%{
         background-color: #00ab8d;
         color: #fff;
+    }
+}
+
+@keyframes button_hover{
+    100%{
+        background-color: #333;
+        color: #00ab8d;
     }
 }

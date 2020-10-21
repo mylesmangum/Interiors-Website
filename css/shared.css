@@ -184,11 +184,9 @@ section{
 
 .content_container{
     background-color: #eee;
-    width: 80%;
-    margin-left: 10%;
+    width: 100%;
     margin-top: -5%;
     padding-bottom: 0%;
-    border-radius: 2%;
 }
 
 /* End Content Container */
@@ -196,8 +194,8 @@ section{
 /* Gallery */
 
 #gallery{
-    margin-left: 40rem;
-    margin-right: 40rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
 }
 
 .flex_container{
@@ -207,7 +205,6 @@ section{
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
-    justify-content: ;
 }
 
 .photo{
@@ -220,22 +217,67 @@ section{
 
 #rsvp{
     background-color: #00ab8d;
+    color: #fff;
     width: 100rem;
     height: auto;
     padding: 5rem;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.7);;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
+
+.reservation h2, p{
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+input[type=text]{
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+    margin-left: 10%;
+    width: 80%;
+    margin-top: 2rem;
+    border-radius: 5px;
+}
+
+.submit input[type=submit]{
+    padding: 2rem 5rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+    margin-left: 10%;
+}
+
+.submit input[type=submit]:hover{
+    animation: button_hover;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+.form_spacer{
+    text-align: center;
+}
+
 
 
 /* End Contact */
 
-/* ANIMATIONS */
+/* Footer */
 
-@keyframes hovering_menu{
-    100%{
-        background-color: #00ab8d;
-        color: #fff;
-    }
+footer{
+    background-color: #333;
+    margin-top: -3rem;
+    color: #eee;
+    margin-bottom: -3rem;
+    text-align: center;
 }
+
+footer p, h4{
+    margin-bottom: -1.5rem;
+}
+
+/* End Footer */
